@@ -1,1 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Script Tracking</title>
+    <script src="https://kit.fontawesome.com/c64cf4433d.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            width: 100%;
+            height: 10vh;
+            background: rgb(82, 79, 79);
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header input {
+            width: 50%;
+            height: 30px;
+            border-radius: 30px;
+            padding-left: 20px;
+            border: none;
+            outline: none;
+        }
+
+        header i {
+            transform: translateX(-25px);
+            color: black;
+            font-size: 18px;
+        }
+
+        main {
+            padding: 10px;
+            height: 90vh;
+            background: rgb(246, 235, 235);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            grid-gap: 20px;
+            overflow: scroll;
+        }
+
+        .content {
+            width: 380px;
+            height: 250px;
+            overflow: hidden;
+            background: white;
+            margin-left: 20px;
+            padding: 5px;
+            position: relative;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+            resize: vertical;
+        }
+
+        .content button {
+            background-color: green;
+            color: white;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            border: none;
+            width: 50%;
+            height: 25px;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateX(-50%) scale(1.1);
+                background: rgb(20, 67, 20);
+            }
+        }
+
+        .content pre {
+            margin-top: 35px;
+            margin-right: 5px;
+            overflow: scroll;
+            border: 1px solid rgba(42, 129, 42, 0.7);
+            width: 100%;
+            height: 85%;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: rgb(244, 242, 242);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <Header>
+        <input type="text" id="SearchScript" placeholder="Search Here...">
+    </Header>
+    <main>
+        <div class="content">
+            <button>SM Script Master</button>
+            <pre> /*
+                Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
+                
+                Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
+                
+                If Any Issue : 
+                Please Contact : +91 9845411959 by Whatsapp Only 
+                */
+                function onOpen(){
+                MFArchiveScript.onOpen();
+                }
+                function Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                  ScriptApp.newTrigger("hidesheets").timeBased().everyMinutes(5).create();
+                }
+                function Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Archive_SettingCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
+                var Fromsheet = myMF.getRange("B1").getValue();
+                var FromRangeRow = myMF.getRange("B2").getValue();
+                var FromRangeColumn = myMF.getRange("B3").getValue();
+                var ConditionColumn1 = myMF.getRange("B4").getValue();
+                var ConditionColumn = ConditionColumn1-1;
+                var ToSheet = myMF.getRange("B5").getValue();
+                var InitiateSheet = myMF.getRange("B6").getValue();
+                var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
+                var InitiateSheetconditionColumn = InitiateSheetconditionColumn1-1;
+                var GetRangefiles = myMF.getRange("C8").getValue();
+                var StartingRangeSpatecol = myMF.getRange("B9").getValue();
+                var LastRowcode = myMF.getRange("B10").getValue() ;
+                var LastRow = LastRowcode - FromRangeRow +1 ;
+                var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssindata = ssin.getRange(FromRangeRow,FromRangeColumn ,LastRow,ssin.getLastColumn()).getValues();
+                var ssindatafilter = ssindata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                
+                
+                var e = ssindatafilter.length;
+                if (e>0){
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssdata = ss.getRange(FromRangeRow,FromRangeColumn,LastRow,ss.getLastColumn()).getValues();
+                var ssdatafilter = ssdata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
+                var lr = ssq.getLastRow(); var lr2 = lr+1;
+                var ssdata = ssq.getRange(lr2,1,ssdatafilter.length,ssdatafilter[0].length).setValues(ssdatafilter);
+                //Pasted the Value in Acriveed File
+                var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "";
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                Logger.log(aadatafiltermap[0].length)
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                }// CLOSE IF STATEMENT
+                else{var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "" ;
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                };// CLOSE ELSE STATEMENT
+                }
+                
+                function InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication()
+                }
+                
+                function importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                function plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                
+                
+                
+                function importrange_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrange_datamasterissue_autoconnectToMFArchiveScript();
+                }function importrangebyid_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrangebyid_datamasterissue_autoconnectToMFArchiveScript();
+                }function importRangeCore_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importRangeCore_datamasterissue_autoconnectToMFArchiveScript();
+                }function Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript();
+                }
+                
+                
+                function CreateTriggerAdditionforDoertoDoer(){
+                  MFArchiveScript.CreateTriggerAdditionforDoertoDoer();
+                }
+                
+                function CleartheDataofDoerSheets(){
+                  MFArchiveScript.CleartheDataofDoerSheets();
+                }
+                
+                function Doer_to_Doer(){
+                  MFArchiveScript.Doer_to_Doer();
+                }
+                function reservedscript1() {
+                  MFArchiveScript.reservedscript1();
+                }
+                function reservedscript2() {
+                  
+                  MFArchiveScript.reservedscript2();
+                }
+                function reservedscript3() {
+                  
+                  MFArchiveScript.reservedscript3();
+                }
+                function reservedscript4() {
+                  
+                  MFArchiveScript.reservedscript4();
+                }
+                function reservedscript5() {
+                  
+                  MFArchiveScript.reservedscript5();
+                }
+                function reservedscript6() {
+                  
+                  MFArchiveScript.reservedscript6();
+                }
+                function reservedscript7() {
+                  
+                  MFArchiveScript.reservedscript7();
+                }
+                function reservedscript8() {
+                  
+                  MFArchiveScript.reservedscript8();
+                }
+                function reservedscript9() {
+                  
+                  MFArchiveScript.reservedscript9();
+                }
+                function reservedscript10() {
+                  
+                  MFArchiveScript.reservedscript10();
+                }
+                function reservedscript11() {
+                  
+                  MFArchiveScript.reservedscript11();
+                }
+                function reservedscript12() {
+                  
+                  MFArchiveScript.reservedscript12();
+                } </pre>
+        </div>
+        <div class="content">
+            <button>SM Importrange</button>
+            <pre> /*
+                Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
+                
+                Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
+                
+                If Any Issue : 
+                Please Contact : +91 9845411959 by Whatsapp Only 
+                */
+                function onOpen(){
+                MFArchiveScript.onOpen();
+                }
+                
+                function Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                  ScriptApp.newTrigger("hidesheets").timeBased().everyMinutes(5).create();
+                }
+                function Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Archive_SettingCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
+                var Fromsheet = myMF.getRange("B1").getValue();
+                var FromRangeRow = myMF.getRange("B2").getValue();
+                var FromRangeColumn = myMF.getRange("B3").getValue();
+                var ConditionColumn1 = myMF.getRange("B4").getValue();
+                var ConditionColumn = ConditionColumn1-1;
+                var ToSheet = myMF.getRange("B5").getValue();
+                var InitiateSheet = myMF.getRange("B6").getValue();
+                var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
+                var InitiateSheetconditionColumn = InitiateSheetconditionColumn1-1;
+                var GetRangefiles = myMF.getRange("C8").getValue();
+                var StartingRangeSpatecol = myMF.getRange("B9").getValue();
+                var LastRowcode = myMF.getRange("B10").getValue() ;
+                var LastRow = LastRowcode - FromRangeRow +1 ;
+                var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssindata = ssin.getRange(FromRangeRow,FromRangeColumn ,LastRow,ssin.getLastColumn()).getValues();
+                var ssindatafilter = ssindata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                
+                
+                var e = ssindatafilter.length;
+                if (e>0){
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssdata = ss.getRange(FromRangeRow,FromRangeColumn,LastRow,ss.getLastColumn()).getValues();
+                var ssdatafilter = ssdata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
+                var lr = ssq.getLastRow(); var lr2 = lr+1;
+                var ssdata = ssq.getRange(lr2,1,ssdatafilter.length,ssdatafilter[0].length).setValues(ssdatafilter);
+                //Pasted the Value in Acriveed File
+                var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "";
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                Logger.log(aadatafiltermap[0].length)
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                }// CLOSE IF STATEMENT
+                else{var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "" ;
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                };// CLOSE ELSE STATEMENT
+                }
+                
+                function InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication()
+                }
+                
+                function importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                function plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                
+                
+                
+                function importrange_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrange_datamasterissue_autoconnectToMFArchiveScript();
+                }function importrangebyid_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrangebyid_datamasterissue_autoconnectToMFArchiveScript();
+                }function importRangeCore_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importRangeCore_datamasterissue_autoconnectToMFArchiveScript();
+                }function Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript();
+                }
+                
+                
+                function CreateTriggerAdditionforDoertoDoer(){
+                  MFArchiveScript.CreateTriggerAdditionforDoertoDoer();
+                }
+                
+                function CleartheDataofDoerSheets(){
+                  MFArchiveScript.CleartheDataofDoerSheets();
+                }
+                
+                function Doer_to_Doer(){
+                  MFArchiveScript.Doer_to_Doer();
+                }
+                function reservedscript1() {
+                  MFArchiveScript.reservedscript1();
+                }
+                function reservedscript2() {
+                  
+                  MFArchiveScript.reservedscript2();
+                }
+                function reservedscript3() {
+                  
+                  MFArchiveScript.reservedscript3();
+                }
+                function reservedscript4() {
+                  
+                  MFArchiveScript.reservedscript4();
+                }
+                function reservedscript5() {
+                  
+                  MFArchiveScript.reservedscript5();
+                }
+                function reservedscript6() {
+                  
+                  MFArchiveScript.reservedscript6();
+                }
+                function reservedscript7() {
+                  
+                  MFArchiveScript.reservedscript7();
+                }
+                function reservedscript8() {
+                  
+                  MFArchiveScript.reservedscript8();
+                }
+                function reservedscript9() {
+                  
+                  MFArchiveScript.reservedscript9();
+                }
+                function reservedscript10() {
+                  
+                  MFArchiveScript.reservedscript10();
+                }
+                function reservedscript11() {
+                  
+                  MFArchiveScript.reservedscript11();
+                }
+                function reservedscript12() {
+                  
+                  MFArchiveScript.reservedscript12();
+                }</pre>
+        </div>
+        <div class="content">
+            <button>SM Work Flow</button>
+            <pre> /*
+                Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
+                
+                Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
+                
+                If Any Issue : 
+                Please Contact : +91 9845411959 by Whatsapp Only 
+                */
+                function onOpen(){
+                MFArchiveScript.onOpen();
+                }
+                
+                function Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                  ScriptApp.newTrigger("hidesheets").timeBased().everyMinutes(5).create();
+                }
+                function Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Archive_SettingCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
+                var Fromsheet = myMF.getRange("B1").getValue();
+                var FromRangeRow = myMF.getRange("B2").getValue();
+                var FromRangeColumn = myMF.getRange("B3").getValue();
+                var ConditionColumn1 = myMF.getRange("B4").getValue();
+                var ConditionColumn = ConditionColumn1-1;
+                var ToSheet = myMF.getRange("B5").getValue();
+                var InitiateSheet = myMF.getRange("B6").getValue();
+                var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
+                var InitiateSheetconditionColumn = InitiateSheetconditionColumn1-1;
+                var GetRangefiles = myMF.getRange("C8").getValue();
+                var StartingRangeSpatecol = myMF.getRange("B9").getValue();
+                var LastRowcode = myMF.getRange("B10").getValue() ;
+                var LastRow = LastRowcode - FromRangeRow +1 ;
+                var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssindata = ssin.getRange(FromRangeRow,FromRangeColumn ,LastRow,ssin.getLastColumn()).getValues();
+                var ssindatafilter = ssindata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                
+                
+                var e = ssindatafilter.length;
+                if (e>0){
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssdata = ss.getRange(FromRangeRow,FromRangeColumn,LastRow,ss.getLastColumn()).getValues();
+                var ssdatafilter = ssdata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
+                var lr = ssq.getLastRow(); var lr2 = lr+1;
+                var ssdata = ssq.getRange(lr2,1,ssdatafilter.length,ssdatafilter[0].length).setValues(ssdatafilter);
+                //Pasted the Value in Acriveed File
+                var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "";
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                Logger.log(aadatafiltermap[0].length)
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                }// CLOSE IF STATEMENT
+                else{var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "" ;
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                };// CLOSE ELSE STATEMENT
+                }
+                
+                function InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication()
+                }
+                
+                function importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                function plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                
+                
+                
+                function importrange_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrange_datamasterissue_autoconnectToMFArchiveScript();
+                }function importrangebyid_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrangebyid_datamasterissue_autoconnectToMFArchiveScript();
+                }function importRangeCore_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importRangeCore_datamasterissue_autoconnectToMFArchiveScript();
+                }function Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript();
+                }
+                
+                
+                function CreateTriggerAdditionforDoertoDoer(){
+                  MFArchiveScript.CreateTriggerAdditionforDoertoDoer();
+                }
+                
+                function CleartheDataofDoerSheets(){
+                  MFArchiveScript.CleartheDataofDoerSheets();
+                }
+                
+                function Doer_to_Doer(){
+                  MFArchiveScript.Doer_to_Doer();
+                }
+                function reservedscript1() {
+                  MFArchiveScript.reservedscript1();
+                }
+                function reservedscript2() {
+                  
+                  MFArchiveScript.reservedscript2();
+                }
+                function reservedscript3() {
+                  
+                  MFArchiveScript.reservedscript3();
+                }
+                function reservedscript4() {
+                  
+                  MFArchiveScript.reservedscript4();
+                }
+                function reservedscript5() {
+                  
+                  MFArchiveScript.reservedscript5();
+                }
+                function reservedscript6() {
+                  
+                  MFArchiveScript.reservedscript6();
+                }
+                function reservedscript7() {
+                  
+                  MFArchiveScript.reservedscript7();
+                }
+                function reservedscript8() {
+                  
+                  MFArchiveScript.reservedscript8();
+                }
+                function reservedscript9() {
+                  
+                  MFArchiveScript.reservedscript9();
+                }
+                function reservedscript10() {
+                  
+                  MFArchiveScript.reservedscript10();
+                }
+                function reservedscript11() {
+                  
+                  MFArchiveScript.reservedscript11();
+                }
+                function reservedscript12() {
+                  
+                  MFArchiveScript.reservedscript12();
+                }</pre>
+        </div>
+        <div class="content">
+            <button>SM Advance Importrange</button>
+            <pre>/*
+                Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
+                
+                Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
+                
+                If Any Issue : 
+                Please Contact : +91 9845411959 by Whatsapp Only 
+                */
+                function onOpen(){
+                MFArchiveScript.onOpen();
+                }
+                
+                function Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                  ScriptApp.newTrigger("hidesheets").timeBased().everyMinutes(5).create();
+                }
+                function Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Archive_SettingCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
+                var Fromsheet = myMF.getRange("B1").getValue();
+                var FromRangeRow = myMF.getRange("B2").getValue();
+                var FromRangeColumn = myMF.getRange("B3").getValue();
+                var ConditionColumn1 = myMF.getRange("B4").getValue();
+                var ConditionColumn = ConditionColumn1-1;
+                var ToSheet = myMF.getRange("B5").getValue();
+                var InitiateSheet = myMF.getRange("B6").getValue();
+                var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
+                var InitiateSheetconditionColumn = InitiateSheetconditionColumn1-1;
+                var GetRangefiles = myMF.getRange("C8").getValue();
+                var StartingRangeSpatecol = myMF.getRange("B9").getValue();
+                var LastRowcode = myMF.getRange("B10").getValue() ;
+                var LastRow = LastRowcode - FromRangeRow +1 ;
+                var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssindata = ssin.getRange(FromRangeRow,FromRangeColumn ,LastRow,ssin.getLastColumn()).getValues();
+                var ssindatafilter = ssindata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                
+                
+                var e = ssindatafilter.length;
+                if (e>0){
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssdata = ss.getRange(FromRangeRow,FromRangeColumn,LastRow,ss.getLastColumn()).getValues();
+                var ssdatafilter = ssdata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
+                var lr = ssq.getLastRow(); var lr2 = lr+1;
+                var ssdata = ssq.getRange(lr2,1,ssdatafilter.length,ssdatafilter[0].length).setValues(ssdatafilter);
+                //Pasted the Value in Acriveed File
+                var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "";
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                Logger.log(aadatafiltermap[0].length)
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                }// CLOSE IF STATEMENT
+                else{var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "" ;
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                };// CLOSE ELSE STATEMENT
+                }
+                
+                function InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication()
+                }
+                
+                function importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                function plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                
+                
+                
+                function importrange_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrange_datamasterissue_autoconnectToMFArchiveScript();
+                }function importrangebyid_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrangebyid_datamasterissue_autoconnectToMFArchiveScript();
+                }function importRangeCore_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importRangeCore_datamasterissue_autoconnectToMFArchiveScript();
+                }function Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript();
+                }
+                
+                
+                function CreateTriggerAdditionforDoertoDoer(){
+                  MFArchiveScript.CreateTriggerAdditionforDoertoDoer();
+                }
+                
+                function CleartheDataofDoerSheets(){
+                  MFArchiveScript.CleartheDataofDoerSheets();
+                }
+                
+                function Doer_to_Doer(){
+                  MFArchiveScript.Doer_to_Doer();
+                }
+                function reservedscript1() {
+                  MFArchiveScript.reservedscript1();
+                }
+                function reservedscript2() {
+                  
+                  MFArchiveScript.reservedscript2();
+                }
+                function reservedscript3() {
+                  
+                  MFArchiveScript.reservedscript3();
+                }
+                function reservedscript4() {
+                  
+                  MFArchiveScript.reservedscript4();
+                }
+                function reservedscript5() {
+                  
+                  MFArchiveScript.reservedscript5();
+                }
+                function reservedscript6() {
+                  
+                  MFArchiveScript.reservedscript6();
+                }
+                function reservedscript7() {
+                  
+                  MFArchiveScript.reservedscript7();
+                }
+                function reservedscript8() {
+                  
+                  MFArchiveScript.reservedscript8();
+                }
+                function reservedscript9() {
+                  
+                  MFArchiveScript.reservedscript9();
+                }
+                function reservedscript10() {
+                  
+                  MFArchiveScript.reservedscript10();
+                }
+                function reservedscript11() {
+                  
+                  MFArchiveScript.reservedscript11();
+                }
+                function reservedscript12() {
+                  
+                  MFArchiveScript.reservedscript12();
+                }</pre>
+        </div>
+
+        <div class="content">
+            <button>DME Formulas</button>
+            <pre>/*
+                Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
+                
+                Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
+                
+                If Any Issue : 
+                Please Contact : +91 9845411959 by Whatsapp Only 
+                */
+                function onOpen(){
+                MFArchiveScript.onOpen();
+                }
+                
+                function Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                  ScriptApp.newTrigger("hidesheets").timeBased().everyMinutes(5).create();
+                }
+                function Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Archive_SettingCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
+                var Fromsheet = myMF.getRange("B1").getValue();
+                var FromRangeRow = myMF.getRange("B2").getValue();
+                var FromRangeColumn = myMF.getRange("B3").getValue();
+                var ConditionColumn1 = myMF.getRange("B4").getValue();
+                var ConditionColumn = ConditionColumn1-1;
+                var ToSheet = myMF.getRange("B5").getValue();
+                var InitiateSheet = myMF.getRange("B6").getValue();
+                var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
+                var InitiateSheetconditionColumn = InitiateSheetconditionColumn1-1;
+                var GetRangefiles = myMF.getRange("C8").getValue();
+                var StartingRangeSpatecol = myMF.getRange("B9").getValue();
+                var LastRowcode = myMF.getRange("B10").getValue() ;
+                var LastRow = LastRowcode - FromRangeRow +1 ;
+                var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssindata = ssin.getRange(FromRangeRow,FromRangeColumn ,LastRow,ssin.getLastColumn()).getValues();
+                var ssindatafilter = ssindata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                
+                
+                var e = ssindatafilter.length;
+                if (e>0){
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssdata = ss.getRange(FromRangeRow,FromRangeColumn,LastRow,ss.getLastColumn()).getValues();
+                var ssdatafilter = ssdata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
+                var lr = ssq.getLastRow(); var lr2 = lr+1;
+                var ssdata = ssq.getRange(lr2,1,ssdatafilter.length,ssdatafilter[0].length).setValues(ssdatafilter);
+                //Pasted the Value in Acriveed File
+                var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "";
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                Logger.log(aadatafiltermap[0].length)
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                }// CLOSE IF STATEMENT
+                else{var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "" ;
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                };// CLOSE ELSE STATEMENT
+                }
+                
+                function InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication()
+                }
+                
+                function importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                function plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                
+                
+                
+                function importrange_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrange_datamasterissue_autoconnectToMFArchiveScript();
+                }function importrangebyid_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrangebyid_datamasterissue_autoconnectToMFArchiveScript();
+                }function importRangeCore_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importRangeCore_datamasterissue_autoconnectToMFArchiveScript();
+                }function Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript();
+                }
+                
+                
+                function CreateTriggerAdditionforDoertoDoer(){
+                  MFArchiveScript.CreateTriggerAdditionforDoertoDoer();
+                }
+                
+                function CleartheDataofDoerSheets(){
+                  MFArchiveScript.CleartheDataofDoerSheets();
+                }
+                
+                function Doer_to_Doer(){
+                  MFArchiveScript.Doer_to_Doer();
+                }
+                function reservedscript1() {
+                  MFArchiveScript.reservedscript1();
+                }
+                function reservedscript2() {
+                  
+                  MFArchiveScript.reservedscript2();
+                }
+                function reservedscript3() {
+                  
+                  MFArchiveScript.reservedscript3();
+                }
+                function reservedscript4() {
+                  
+                  MFArchiveScript.reservedscript4();
+                }
+                function reservedscript5() {
+                  
+                  MFArchiveScript.reservedscript5();
+                }
+                function reservedscript6() {
+                  
+                  MFArchiveScript.reservedscript6();
+                }
+                function reservedscript7() {
+                  
+                  MFArchiveScript.reservedscript7();
+                }
+                function reservedscript8() {
+                  
+                  MFArchiveScript.reservedscript8();
+                }
+                function reservedscript9() {
+                  
+                  MFArchiveScript.reservedscript9();
+                }
+                function reservedscript10() {
+                  
+                  MFArchiveScript.reservedscript10();
+                }
+                function reservedscript11() {
+                  
+                  MFArchiveScript.reservedscript11();
+                }
+                function reservedscript12() {
+                  
+                  MFArchiveScript.reservedscript12();
+                }</pre>
+        </div>
+
+        <div class="content">
+            <button>SM Protection</button>
+            <pre>/*
+                Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
+                
+                Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
+                
+                If Any Issue : 
+                Please Contact : +91 9845411959 by Whatsapp Only 
+                */
+                function onOpen(){
+                MFArchiveScript.onOpen();
+                }
+                
+                function Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                  ScriptApp.newTrigger("hidesheets").timeBased().everyMinutes(5).create();
+                }
+                function Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Archive_SettingCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
+                var Fromsheet = myMF.getRange("B1").getValue();
+                var FromRangeRow = myMF.getRange("B2").getValue();
+                var FromRangeColumn = myMF.getRange("B3").getValue();
+                var ConditionColumn1 = myMF.getRange("B4").getValue();
+                var ConditionColumn = ConditionColumn1-1;
+                var ToSheet = myMF.getRange("B5").getValue();
+                var InitiateSheet = myMF.getRange("B6").getValue();
+                var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
+                var InitiateSheetconditionColumn = InitiateSheetconditionColumn1-1;
+                var GetRangefiles = myMF.getRange("C8").getValue();
+                var StartingRangeSpatecol = myMF.getRange("B9").getValue();
+                var LastRowcode = myMF.getRange("B10").getValue() ;
+                var LastRow = LastRowcode - FromRangeRow +1 ;
+                var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssindata = ssin.getRange(FromRangeRow,FromRangeColumn ,LastRow,ssin.getLastColumn()).getValues();
+                var ssindatafilter = ssindata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                
+                
+                var e = ssindatafilter.length;
+                if (e>0){
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssdata = ss.getRange(FromRangeRow,FromRangeColumn,LastRow,ss.getLastColumn()).getValues();
+                var ssdatafilter = ssdata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
+                var lr = ssq.getLastRow(); var lr2 = lr+1;
+                var ssdata = ssq.getRange(lr2,1,ssdatafilter.length,ssdatafilter[0].length).setValues(ssdatafilter);
+                //Pasted the Value in Acriveed File
+                var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "";
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                Logger.log(aadatafiltermap[0].length)
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                }// CLOSE IF STATEMENT
+                else{var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "" ;
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                };// CLOSE ELSE STATEMENT
+                }
+                
+                function InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication()
+                }
+                
+                function importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                function plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                
+                
+                
+                function importrange_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrange_datamasterissue_autoconnectToMFArchiveScript();
+                }function importrangebyid_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrangebyid_datamasterissue_autoconnectToMFArchiveScript();
+                }function importRangeCore_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importRangeCore_datamasterissue_autoconnectToMFArchiveScript();
+                }function Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript();
+                }
+                
+                
+                function CreateTriggerAdditionforDoertoDoer(){
+                  MFArchiveScript.CreateTriggerAdditionforDoertoDoer();
+                }
+                
+                function CleartheDataofDoerSheets(){
+                  MFArchiveScript.CleartheDataofDoerSheets();
+                }
+                
+                function Doer_to_Doer(){
+                  MFArchiveScript.Doer_to_Doer();
+                }
+                function reservedscript1() {
+                  MFArchiveScript.reservedscript1();
+                }
+                function reservedscript2() {
+                  
+                  MFArchiveScript.reservedscript2();
+                }
+                function reservedscript3() {
+                  
+                  MFArchiveScript.reservedscript3();
+                }
+                function reservedscript4() {
+                  
+                  MFArchiveScript.reservedscript4();
+                }
+                function reservedscript5() {
+                  
+                  MFArchiveScript.reservedscript5();
+                }
+                function reservedscript6() {
+                  
+                  MFArchiveScript.reservedscript6();
+                }
+                function reservedscript7() {
+                  
+                  MFArchiveScript.reservedscript7();
+                }
+                function reservedscript8() {
+                  
+                  MFArchiveScript.reservedscript8();
+                }
+                function reservedscript9() {
+                  
+                  MFArchiveScript.reservedscript9();
+                }
+                function reservedscript10() {
+                  
+                  MFArchiveScript.reservedscript10();
+                }
+                function reservedscript11() {
+                  
+                  MFArchiveScript.reservedscript11();
+                }
+                function reservedscript12() {
+                  
+                  MFArchiveScript.reservedscript12();
+                }</pre>
+        </div>
+
+        <div class="content">
+            <button>MF Archive</button>
+            <pre>/*
+                Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
+                
+                Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
+                
+                If Any Issue : 
+                Please Contact : +91 9845411959 by Whatsapp Only 
+                */
+                function onOpen(){
+                MFArchiveScript.onOpen();
+                }
+                
+                function Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.Create_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                  ScriptApp.newTrigger("hidesheets").timeBased().everyMinutes(5).create();
+                }
+                function Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Delete_TriggerCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Archive_SettingCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
+                var Fromsheet = myMF.getRange("B1").getValue();
+                var FromRangeRow = myMF.getRange("B2").getValue();
+                var FromRangeColumn = myMF.getRange("B3").getValue();
+                var ConditionColumn1 = myMF.getRange("B4").getValue();
+                var ConditionColumn = ConditionColumn1-1;
+                var ToSheet = myMF.getRange("B5").getValue();
+                var InitiateSheet = myMF.getRange("B6").getValue();
+                var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
+                var InitiateSheetconditionColumn = InitiateSheetconditionColumn1-1;
+                var GetRangefiles = myMF.getRange("C8").getValue();
+                var StartingRangeSpatecol = myMF.getRange("B9").getValue();
+                var LastRowcode = myMF.getRange("B10").getValue() ;
+                var LastRow = LastRowcode - FromRangeRow +1 ;
+                var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssindata = ssin.getRange(FromRangeRow,FromRangeColumn ,LastRow,ssin.getLastColumn()).getValues();
+                var ssindatafilter = ssindata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                
+                
+                var e = ssindatafilter.length;
+                if (e>0){
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var ssdata = ss.getRange(FromRangeRow,FromRangeColumn,LastRow,ss.getLastColumn()).getValues();
+                var ssdatafilter = ssdata.filter(function(r){
+                  return r[ConditionColumn]!="";
+                });
+                var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
+                var lr = ssq.getLastRow(); var lr2 = lr+1;
+                var ssdata = ssq.getRange(lr2,1,ssdatafilter.length,ssdatafilter[0].length).setValues(ssdatafilter);
+                //Pasted the Value in Acriveed File
+                var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "";
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                Logger.log(aadatafiltermap[0].length)
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                }// CLOSE IF STATEMENT
+                else{var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
+                var aadata = aa.getRange(1,1,aa.getLastRow(),aa.getLastColumn()).getValues();
+                var aadatafilter = aadata.filter(function(r){
+                return r[InitiateSheetconditionColumn] === "" && r[0] != "" ;
+                });
+                
+                
+                var aadatafiltermap = aadatafilter.map(function(row){
+                 return [row[0],row[1],row[2],row[3],row[5],row[7],row[8],row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],row[29]] ;
+                });
+                
+                var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
+                var Error_Clear_Application = ssy.getRange(FromRangeRow,StartingRangeSpatecol,LastRow,aadatafiltermap[0].length).clearContent();
+                var ssyinput = ssy.getRange(FromRangeRow,StartingRangeSpatecol,aadatafiltermap.length,aadatafiltermap[0].length).setValues(aadatafiltermap);
+                };// CLOSE ELSE STATEMENT
+                }
+                
+                function InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.InstalltheScriptCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication()
+                }
+                
+                function importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.importRangeFormulaCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.initialCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedwwhCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedindaysCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                function plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.plannedleadCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.specificTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.actualTimeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.timeDelayCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.testCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifnoCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.tatifyesCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication (){
+                  MFArchiveScript.iterativeCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                function Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication(){
+                  MFArchiveScript.Working_HoursCreate_Trigger_data_OBSC_qoutation_1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq_pexdzbVpw92A2ZQy47c38QG_MF_Script_ValidateMaster_DecodeEnvelopment_data_Access_Sucessfully_InstalltheApplication();
+                }
+                
+                
+                
+                
+                function importrange_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrange_datamasterissue_autoconnectToMFArchiveScript();
+                }function importrangebyid_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importrangebyid_datamasterissue_autoconnectToMFArchiveScript();
+                }function importRangeCore_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.importRangeCore_datamasterissue_autoconnectToMFArchiveScript();
+                }function Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript(){
+                  MFArchiveScript.Installthe_Importrange_Application_datamasterissue_autoconnectToMFArchiveScript();
+                }
+                
+                
+                function CreateTriggerAdditionforDoertoDoer(){
+                  MFArchiveScript.CreateTriggerAdditionforDoertoDoer();
+                }
+                
+                function CleartheDataofDoerSheets(){
+                  MFArchiveScript.CleartheDataofDoerSheets();
+                }
+                
+                function Doer_to_Doer(){
+                  MFArchiveScript.Doer_to_Doer();
+                }
+                function reservedscript1() {
+                  MFArchiveScript.reservedscript1();
+                }
+                function reservedscript2() {
+                  
+                  MFArchiveScript.reservedscript2();
+                }
+                function reservedscript3() {
+                  
+                  MFArchiveScript.reservedscript3();
+                }
+                function reservedscript4() {
+                  
+                  MFArchiveScript.reservedscript4();
+                }
+                function reservedscript5() {
+                  
+                  MFArchiveScript.reservedscript5();
+                }
+                function reservedscript6() {
+                  
+                  MFArchiveScript.reservedscript6();
+                }
+                function reservedscript7() {
+                  
+                  MFArchiveScript.reservedscript7();
+                }
+                function reservedscript8() {
+                  
+                  MFArchiveScript.reservedscript8();
+                }
+                function reservedscript9() {
+                  
+                  MFArchiveScript.reservedscript9();
+                }
+                function reservedscript10() {
+                  
+                  MFArchiveScript.reservedscript10();
+                }
+                function reservedscript11() {
+                  
+                  MFArchiveScript.reservedscript11();
+                }
+                function reservedscript12() {
+                  
+                  MFArchiveScript.reservedscript12();
+                }</pre>
+        </div>
+
+        <div class="content">
+            <button>Make Copy of Spreadsheet</button>
+            <pre> // id = 1LDmqKW6DSpoVVGMoYbMgaAVNR6zw4uCcXbiMTM4bs1kOo426I1VSkUTr
+
+                function MakeCopyofSpreadSheet(){MakeCopyofScript.MakeCopyofSpreadSheet();}function MakeCopyAuto(){MakeCopyofScript.MakeCopyAuto();}function CreateTrigger() {MakeCopyofScript.CreateTrigger();}function DeleteTrigger() {MakeCopyofScript.DeleteTrigger();}function onOpen() {MakeCopyofScript.onOpen();}</pre>
+        </div>
+
+        <div class="content">
+            <button>Doer to Doer</button>
+            <pre> // Code : 1PzqsEKrGuQ3-Eq9_XbCx6P5CFAjAyuTK-TxsQ3OxLCWpraHFCJm2ZY0D
+                function onOpen(){SM_Doer_to_Doer.onOpen()}function InstallMaster(){SM_Doer_to_Doer.InstallMaster()}function Workflow(){  SM_Doer_to_Doer.Workflow()}function Template(){  SM_Doer_to_Doer.Template()}function RunManualWorkflow(){  SM_Doer_to_Doer.RunManualWorkflow()} function CreateTrigger(){  SM_Doer_to_Doer.CreateTrigger()}function Delete_Trigger(){SM_Doer_to_Doer.Delete_Trigger()}function get360Filebase(fileId){SM_Doer_to_Doer.get360Filebase(fileId)}function Cleardata (){SM_Doer_to_Doer.Cleardata()}</pre>
+        </div>
+
+        <div class="content">
+            <button>Tiny Url</button>
+            <pre>function GenerateTiny() {
+                var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Test");
+                var lr = 117
+                Logger.log(lr)
+                for (let i =2 ; i < lr;i++ ){
+                  var status = ss.getRange(i,3).getValue()
+                  if(status ==""){
+                     var link = ss.getRange(i,2).getValue();
+                     var tinylink = UrlFetchApp.fetch('http://tinyurl.com/api-create.php?url=' + link).getContentText(); 
+                     ss.getRange(i,3).setValue(tinylink);
+                     Logger.log(tinylink)
+                  }else{
+                    
+                  }
+                }
+              }
+              </pre>
+        </div>
+
+        <div class="content">
+            <button>SM Doc Template</button>
+            <pre>//Libraries ID  :  1Sdfm3gBVgYVV8T7nixjlkzhiFrpRxTzmDTzxFsvcUNWMOBVnG90M9xiN
+                function onOpen() {SMTemplate.onOpen()} function RunSM_Doc_Formatting() {SMTemplate.RunSM_Doc_Formatting()}function GetBasefile64(fileId) {SMTemplate.GetBasefile64(fileId)}function Install_DocTempletAuto() {SMTemplate.Install_DocTempletAuto()}function Create_Trigger() {SMTemplate.Create_Trigger();}function Delete_Trigger() {SMTemplate.Delete_Trigger()}function SM_Tem_Reserve1() {SMTemplate.M_Tem_Reserve1()}function SM_Tem_Reserve2() {SMTemplate.SM_Tem_Reserve2()}function SM_Tem_Reserve3() {SMTemplate.SM_Tem_Reserve3()}function SM_Tem_Reserve4() {SMTemplate.SM_Tem_Reserve4()}function SM_Tem_Reserve5() {SMTemplate.SM_Tem_Reserve5()}function SM_Tem_Reserve6() {SMTemplate.SM_Tem_Reserve6()}function SM_Tem_Reserve7() {SMTemplate.SM_Tem_Reserve7()}function SM_Tem_Reserve8() {SMTemplate.M_Tem_Reserve8()}function SM_Tem_Reserve9() {SMTemplate.SM_Tem_Reserve9()}function SM_Tem_Reserve10(){SMTemplate.SM_Tem_Reserve10()}</pre>
+        </div>
+
+        <div class="content">
+            <button>SM Self Assesment</button>
+            <pre>https://drive.google.com/open?id=1bW-0M0CTH3tFcgCHmftyUlzIozofPKNMW6rGV1L538M&usp=drive_copy</pre>
+        </div>
+
+        <div class="content">
+            <button>Email Script</button>
+            <pre>// ID : 1g4_ScVN16KIexOl3tbff72vhmEy3mXI1KBWjzVq8l3u-TnpGvSjUaWxP
+                function onOpen(){SM_Email_Script.onOpen();}function Create_trigger(){SM_Email_Script.Create_trigger()}function Delete_trigger(){SM_Email_Script.Delete_trigger()}function Install_EMAIL_app(){SM_Email_Script.Install_EMAIL_app()}function SM_Mail_Send(){SM_Email_Script.SM_Mail_Send()}</pre>
+        </div>
+
+        <div class="content">
+            <button>SM Doc Template V2</button>
+            <pre>// Library ID : 10ppBHNp7c8OjHjayzSgl4mWwKGee-Wyo-qqkBBzCm7j1exkwghsm1oTv
+
+                function onOpen() {SMTemplate.onOpen();} function Create_Trigger() { SMTemplate.Create_Trigger();} function Delete_Trigger() {SMTemplate.Delete_Trigger();} function Install_DocTempletAuto(){SMTemplate.Install_DocTempletAuto()} function RunSM_Doc_Formatting() {SMTemplate.RunSM_Doc_Formatting()} function GetBasefile64(fileId) {SMTemplate.GetBasefile64(fileId)}</pre>
+        </div>
+
+        <div class="content">
+            <button>SM Form Ranger</button>
+            <pre>// ID : 1R0Y7bfNfoW2WhVoJkKncxTgXmCykjMU0xpanm15Lxj9YwF2NQ-O5E1WR
+                function onOpen(){SM_Form_Ranger_APP.onOpen()}function Install_SM_Form_Ranger_app() {SM_Form_Ranger_APP.Install_SM_Form_Ranger_app()}function Get_Item_of_Form(){SM_Form_Ranger_APP.Get_Item_of_Form()}function Update_SM_Form_Ranger_App(){SM_Form_Ranger_APP.Update_SM_Form_Ranger_App()} function Create_Trigger_Ranger(){SM_Form_Ranger_APP.Create_Trigger_Ranger()}function Delete_Trigger_Ranger(){SM_Form_Ranger_APP.Delete_Trigger_Ranger()}</pre>
+        </div>
+
+        <div class="content">
+            <button>SM Edit Url</button>
+            <pre>// ID : 1AlNRBD3XGNIHCMxCh9H_lpKLcukGf2Gbg5z26piofQd1g6iGdKyRCb-m
+                function onOpen() {SM_Edit_URL_Generate.onOpen()} function Create_Trigger_Url() {SM_Edit_URL_Generate.Create_Trigger_Url()} function Delete_Trigger_Url() {SM_Edit_URL_Generate.Delete_Trigger_Url()} function Install_SM_Edit_Url() { SM_Edit_URL_Generate.Install_SM_Edit_Url()} function Run_Manual_Edit_Url() {SM_Edit_URL_Generate.Run_Manual_Edit_Url();};
+                </pre>
+        </div>
+
+    </main>
+
+
+    <script>
+        var main = document.getElementsByTagName('main')[0];
+        var button = main.getElementsByTagName('button');
+        for (let i = 0; i < button.length; i++) {
+            button[i].addEventListener('click', function (event) {
+                var parent = event.currentTarget.parentNode;
+                var prev = parent.getElementsByTagName('pre')[0].innerHTML;
+                console.log(prev);
+                var textarea = document.createElement('textarea');
+                textarea.value = prev;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                textarea.remove();
+                var btnvalue = button[i].innerHTML
+                button[i].innerHTML = 'Bhai Copy Ho Gaya'
+                button[i].style.background = 'orange'
+                alert('Bhai Copy Ho Gaya')
+                setTimeout(function () {
+                    button[i].innerHTML = btnvalue
+                    button[i].style.background = 'green'
+                }, 5000)
+            })
+        }
+    </script>
+    <script>
+        var search = document.getElementById('SearchScript')
+        search.addEventListener('input', function () {
+            var main = document.getElementsByTagName('main')[0]
+            var button = main.getElementsByTagName('button');
+            var searchCon = search.value.toString().toLowerCase();
+            for (let i = 0; i < button.length; i++) {
+                var header = button[i].innerHTML.toString().toLowerCase();
+                if (header.includes(searchCon)) {
+                    button[i].parentNode.style.display = 'block'
+                } else {
+                    button[i].parentNode.style.display = 'none'
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
