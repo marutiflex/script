@@ -2,111 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Marutiflex Script Tracking</title>
-    <script src="https://kit.fontawesome.com/c64cf4433d.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/marutiflex/script/main/download.jpeg" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marutiflex Script Tracking</title>
+  <script src="https://kit.fontawesome.com/c64cf4433d.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/marutiflex/script/main/download.jpeg"
+    type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 
-        header {
-            width: 100%;
-            height: 10vh;
-            background: rgb(82, 79, 79);
-            color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
+    header {
+      width: 100%;
+      height: 10vh;
+      background: rgb(82, 79, 79);
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
 
-        header input {
-            width: 50%;
-            height: 30px;
-            border-radius: 30px;
-            padding-left: 20px;
-            border: none;
-            outline: none;
-        }
+    header input {
+      width: 50%;
+      height: 30px;
+      border-radius: 30px;
+      padding-left: 20px;
+      border: none;
+      outline: none;
+    }
 
-        header i {
-            transform: translateX(-25px);
-            color: black;
-            font-size: 18px;
-        }
+    .heder {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
 
-        main {
-            padding: 10px;
-            height: 90vh;
-            background: rgb(246, 235, 235);
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-            grid-gap: 20px;
-            overflow: scroll;
-        }
+    .heder h3 {
+      margin-left: 10px;
+    }
 
-        .content {
-            width: 380px;
-            height: 250px;
-            overflow: hidden;
-            background: white;
-            margin-left: 20px;
-            padding: 5px;
-            position: relative;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-            resize: vertical;
-        }
+    header img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
 
-        .content button {
-            background-color: green;
-            color: white;
-            left: 50%;
-            position: absolute;
-            transform: translateX(-50%);
-            border: none;
-            width: 50%;
-            height: 25px;
-            border-radius: 10px;
-            transition: 0.3s;
-            cursor: pointer;
+    header h3 {
+      text-decoration: underline;
+      cursor: pointer;
+    }
 
-            &:hover {
-                transform: translateX(-50%) scale(1.1);
-                background: rgb(20, 67, 20);
-            }
-        }
+    main {
+      padding: 10px;
+      height: 90vh;
+      background: rgb(246, 235, 235);
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      grid-gap: 20px;
+      overflow: scroll;
+    }
 
-        .content pre {
-            margin-top: 35px;
-            margin-right: 5px;
-            overflow: scroll;
-            border: 1px solid rgba(42, 129, 42, 0.7);
-            width: 100%;
-            height: 85%;
-            cursor: pointer;
-            transition: 0.3s;
+    .content {
+      width: 380px;
+      height: 250px;
+      overflow: hidden;
+      background: white;
+      margin-left: 20px;
+      padding: 5px;
+      position: relative;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+      resize: vertical;
+    }
 
-            &:hover {
-                background: rgb(244, 242, 242);
-            }
-        }
-    </style>
+    .content button {
+      background-color: green;
+      color: white;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      border: none;
+      width: 50%;
+      height: 25px;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateX(-50%) scale(1.1);
+        background: rgb(20, 67, 20);
+      }
+    }
+
+    .content pre {
+      margin-top: 35px;
+      margin-right: 5px;
+      overflow: scroll;
+      border: 1px solid rgba(42, 129, 42, 0.7);
+      width: 100%;
+      height: 85%;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: rgb(244, 242, 242);
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <Header>
-        <input type="text" id="SearchScript" placeholder="Search Here...">
-    </Header>
-    <main>
-        <div class="content">
-            <button>SM Script Master</button>
-            <pre> /*
+  <Header>
+    <div class="heder">
+      <img src="https://raw.githubusercontent.com/marutiflex/script/main/download.jpeg">
+      <h3>Maruti Flex Script System</h3>
+    </div>
+    <input type="text" id="SearchScript" placeholder="Search Here...">
+  </Header>
+  <main>
+    <div class="content">
+      <button>SM Script Master</button>
+      <pre> /*
                 Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
                 
                 Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
@@ -318,10 +339,10 @@
                   
                   MFArchiveScript.reservedscript12();
                 } </pre>
-        </div>
-        <div class="content">
-            <button>SM Importrange</button>
-            <pre> /*
+    </div>
+    <div class="content">
+      <button>SM Importrange</button>
+      <pre> /*
                 Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
                 
                 Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
@@ -534,10 +555,10 @@
                   
                   MFArchiveScript.reservedscript12();
                 }</pre>
-        </div>
-        <div class="content">
-            <button>SM Work Flow</button>
-            <pre> /*
+    </div>
+    <div class="content">
+      <button>SM Work Flow</button>
+      <pre> /*
                 Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
                 
                 Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
@@ -750,10 +771,10 @@
                   
                   MFArchiveScript.reservedscript12();
                 }</pre>
-        </div>
-        <div class="content">
-            <button>SM Advance Importrange</button>
-            <pre>/*
+    </div>
+    <div class="content">
+      <button>SM Advance Importrange</button>
+      <pre>/*
                 Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
                 
                 Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
@@ -966,11 +987,11 @@
                   
                   MFArchiveScript.reservedscript12();
                 }</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>DME Formulas</button>
-            <pre>/*
+    <div class="content">
+      <button>DME Formulas</button>
+      <pre>/*
                 Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
                 
                 Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
@@ -1183,11 +1204,11 @@
                   
                   MFArchiveScript.reservedscript12();
                 }</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>SM Protection</button>
-            <pre>/*
+    <div class="content">
+      <button>SM Protection</button>
+      <pre>/*
                 Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
                 
                 Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
@@ -1400,11 +1421,11 @@
                   
                   MFArchiveScript.reservedscript12();
                 }</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>MF Archive</button>
-            <pre>/*
+    <div class="content">
+      <button>MF Archive</button>
+      <pre>/*
                 Hello , Please save this Scrpt ID to the Libraries in your Scrpt , 
                 
                 Scrpt ID : 1rvVuxmBkv5A7gl1duzlQYKfxwi0fviHq-pexdzbVpw92A2ZQy47c38QG
@@ -1617,24 +1638,24 @@
                   
                   MFArchiveScript.reservedscript12();
                 }</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>Make Copy of Spreadsheet</button>
-            <pre> // id = 1LDmqKW6DSpoVVGMoYbMgaAVNR6zw4uCcXbiMTM4bs1kOo426I1VSkUTr
+    <div class="content">
+      <button>Make Copy of Spreadsheet</button>
+      <pre> // id = 1LDmqKW6DSpoVVGMoYbMgaAVNR6zw4uCcXbiMTM4bs1kOo426I1VSkUTr
 
                 function MakeCopyofSpreadSheet(){MakeCopyofScript.MakeCopyofSpreadSheet();}function MakeCopyAuto(){MakeCopyofScript.MakeCopyAuto();}function CreateTrigger() {MakeCopyofScript.CreateTrigger();}function DeleteTrigger() {MakeCopyofScript.DeleteTrigger();}function onOpen() {MakeCopyofScript.onOpen();}</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>Doer to Doer</button>
-            <pre> // Code : 1PzqsEKrGuQ3-Eq9_XbCx6P5CFAjAyuTK-TxsQ3OxLCWpraHFCJm2ZY0D
+    <div class="content">
+      <button>Doer to Doer</button>
+      <pre> // Code : 1PzqsEKrGuQ3-Eq9_XbCx6P5CFAjAyuTK-TxsQ3OxLCWpraHFCJm2ZY0D
                 function onOpen(){SM_Doer_to_Doer.onOpen()}function InstallMaster(){SM_Doer_to_Doer.InstallMaster()}function Workflow(){  SM_Doer_to_Doer.Workflow()}function Template(){  SM_Doer_to_Doer.Template()}function RunManualWorkflow(){  SM_Doer_to_Doer.RunManualWorkflow()} function CreateTrigger(){  SM_Doer_to_Doer.CreateTrigger()}function Delete_Trigger(){SM_Doer_to_Doer.Delete_Trigger()}function get360Filebase(fileId){SM_Doer_to_Doer.get360Filebase(fileId)}function Cleardata (){SM_Doer_to_Doer.Cleardata()}</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>Tiny Url</button>
-            <pre>function GenerateTiny() {
+    <div class="content">
+      <button>Tiny Url</button>
+      <pre>function GenerateTiny() {
                 var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Test");
                 var lr = 117
                 Logger.log(lr)
@@ -1651,47 +1672,47 @@
                 }
               }
               </pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>SM Doc Template</button>
-            <pre>//Libraries ID  :  1Sdfm3gBVgYVV8T7nixjlkzhiFrpRxTzmDTzxFsvcUNWMOBVnG90M9xiN
+    <div class="content">
+      <button>SM Doc Template</button>
+      <pre>//Libraries ID  :  1Sdfm3gBVgYVV8T7nixjlkzhiFrpRxTzmDTzxFsvcUNWMOBVnG90M9xiN
                 function onOpen() {SMTemplate.onOpen()} function RunSM_Doc_Formatting() {SMTemplate.RunSM_Doc_Formatting()}function GetBasefile64(fileId) {SMTemplate.GetBasefile64(fileId)}function Install_DocTempletAuto() {SMTemplate.Install_DocTempletAuto()}function Create_Trigger() {SMTemplate.Create_Trigger();}function Delete_Trigger() {SMTemplate.Delete_Trigger()}function SM_Tem_Reserve1() {SMTemplate.M_Tem_Reserve1()}function SM_Tem_Reserve2() {SMTemplate.SM_Tem_Reserve2()}function SM_Tem_Reserve3() {SMTemplate.SM_Tem_Reserve3()}function SM_Tem_Reserve4() {SMTemplate.SM_Tem_Reserve4()}function SM_Tem_Reserve5() {SMTemplate.SM_Tem_Reserve5()}function SM_Tem_Reserve6() {SMTemplate.SM_Tem_Reserve6()}function SM_Tem_Reserve7() {SMTemplate.SM_Tem_Reserve7()}function SM_Tem_Reserve8() {SMTemplate.M_Tem_Reserve8()}function SM_Tem_Reserve9() {SMTemplate.SM_Tem_Reserve9()}function SM_Tem_Reserve10(){SMTemplate.SM_Tem_Reserve10()}</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>SM Self Assesment</button>
-            <pre>https://drive.google.com/open?id=1bW-0M0CTH3tFcgCHmftyUlzIozofPKNMW6rGV1L538M&usp=drive_copy</pre>
-        </div>
+    <div class="content">
+      <button>SM Self Assesment</button>
+      <pre>https://drive.google.com/open?id=1bW-0M0CTH3tFcgCHmftyUlzIozofPKNMW6rGV1L538M&usp=drive_copy</pre>
+    </div>
 
-        <div class="content">
-            <button>Email Script</button>
-            <pre>// ID : 1g4_ScVN16KIexOl3tbff72vhmEy3mXI1KBWjzVq8l3u-TnpGvSjUaWxP
+    <div class="content">
+      <button>Email Script</button>
+      <pre>// ID : 1g4_ScVN16KIexOl3tbff72vhmEy3mXI1KBWjzVq8l3u-TnpGvSjUaWxP
                 function onOpen(){SM_Email_Script.onOpen();}function Create_trigger(){SM_Email_Script.Create_trigger()}function Delete_trigger(){SM_Email_Script.Delete_trigger()}function Install_EMAIL_app(){SM_Email_Script.Install_EMAIL_app()}function SM_Mail_Send(){SM_Email_Script.SM_Mail_Send()}</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>SM Doc Template V2</button>
-            <pre>// Library ID : 10ppBHNp7c8OjHjayzSgl4mWwKGee-Wyo-qqkBBzCm7j1exkwghsm1oTv
+    <div class="content">
+      <button>SM Doc Template V2</button>
+      <pre>// Library ID : 10ppBHNp7c8OjHjayzSgl4mWwKGee-Wyo-qqkBBzCm7j1exkwghsm1oTv
 
                 function onOpen() {SMTemplate.onOpen();} function Create_Trigger() { SMTemplate.Create_Trigger();} function Delete_Trigger() {SMTemplate.Delete_Trigger();} function Install_DocTempletAuto(){SMTemplate.Install_DocTempletAuto()} function RunSM_Doc_Formatting() {SMTemplate.RunSM_Doc_Formatting()} function GetBasefile64(fileId) {SMTemplate.GetBasefile64(fileId)}</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>SM Form Ranger</button>
-            <pre>// ID : 1R0Y7bfNfoW2WhVoJkKncxTgXmCykjMU0xpanm15Lxj9YwF2NQ-O5E1WR
+    <div class="content">
+      <button>SM Form Ranger</button>
+      <pre>// ID : 1R0Y7bfNfoW2WhVoJkKncxTgXmCykjMU0xpanm15Lxj9YwF2NQ-O5E1WR
                 function onOpen(){SM_Form_Ranger_APP.onOpen()}function Install_SM_Form_Ranger_app() {SM_Form_Ranger_APP.Install_SM_Form_Ranger_app()}function Get_Item_of_Form(){SM_Form_Ranger_APP.Get_Item_of_Form()}function Update_SM_Form_Ranger_App(){SM_Form_Ranger_APP.Update_SM_Form_Ranger_App()} function Create_Trigger_Ranger(){SM_Form_Ranger_APP.Create_Trigger_Ranger()}function Delete_Trigger_Ranger(){SM_Form_Ranger_APP.Delete_Trigger_Ranger()}</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>SM Edit Url</button>
-            <pre>// ID : 1AlNRBD3XGNIHCMxCh9H_lpKLcukGf2Gbg5z26piofQd1g6iGdKyRCb-m
+    <div class="content">
+      <button>SM Edit Url</button>
+      <pre>// ID : 1AlNRBD3XGNIHCMxCh9H_lpKLcukGf2Gbg5z26piofQd1g6iGdKyRCb-m
                 function onOpen() {SM_Edit_URL_Generate.onOpen()} function Create_Trigger_Url() {SM_Edit_URL_Generate.Create_Trigger_Url()} function Delete_Trigger_Url() {SM_Edit_URL_Generate.Delete_Trigger_Url()} function Install_SM_Edit_Url() { SM_Edit_URL_Generate.Install_SM_Edit_Url()} function Run_Manual_Edit_Url() {SM_Edit_URL_Generate.Run_Manual_Edit_Url();};
                 </pre>
-        </div>
-        <div class="content">
-            <button>Conditional Importrange</button>
-            <pre>function onOpen(){
+    </div>
+    <div class="content">
+      <button>Conditional Importrange</button>
+      <pre>function onOpen(){
                 var Ui = SpreadsheetApp.getUi();
                 var menu  = Ui.createMenu("Conditional Importrange")
                 menu
@@ -1939,73 +1960,73 @@
                 }}
                 
                 </pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>Universal Auto FMS</button>
-            <pre>https://docs.google.com/spreadsheets/d/1KLWyyUer55ERgG-g3SnxJe0mLHyORv5zMkpQGRe5huc/edit</pre>
-        </div>
-        <div class="content">
-            <button>Master Blaster Whatsapp</button>
-            <pre>// Library Code : 1cRJmWFLb9_1LL5BYhLLRrpUZ7oGHJc4-44WolVe5Nb8AQXpSM9ifuo1S
+    <div class="content">
+      <button>Universal Auto FMS</button>
+      <pre>https://docs.google.com/spreadsheets/d/1KLWyyUer55ERgG-g3SnxJe0mLHyORv5zMkpQGRe5huc/edit</pre>
+    </div>
+    <div class="content">
+      <button>Master Blaster Whatsapp</button>
+      <pre>// Library Code : 1cRJmWFLb9_1LL5BYhLLRrpUZ7oGHJc4-44WolVe5Nb8AQXpSM9ifuo1S
                 function InstallMaster() {SMMasterBlaster.InstallMaster();}function AutomationofWorkflow(){SMMasterBlaster.AutomationofWorkflow();}function AutodeleteTrigger(){SMMasterBlaster.AutodeleteTrigger();}function onOpen(){SMMasterBlaster.onOpen()};function ManualDeletetrigger(){SMMasterBlaster.ManualDeletetrigger();}function RunManualWorkflow (){SMMasterBlaster.RunManualWorkflow ();}</pre>
-        </div>
-        <div class="content">
-            <button>Calendar App</button>
-            <pre>// id = 1w4e4CYkKTMkNw65NgOQz1kSz070mrBBHDHKBzevrHTvaxFgk5_f291eL
+    </div>
+    <div class="content">
+      <button>Calendar App</button>
+      <pre>// id = 1w4e4CYkKTMkNw65NgOQz1kSz070mrBBHDHKBzevrHTvaxFgk5_f291eL
 
                 function onOpen(){SMCalendarApp.onOpen();}function UpdateTasks(){SMCalendarApp.UpdateTasks();}function CalendarAppItrater(){SMCalendarApp.CalendarAppItrater();}</pre>
-        </div>
+    </div>
 
-        <div class="content">
-            <button>Bulk Mail</button>
-            <pre>//  Code : 1Hcnw9Y6IlIhi2oyaONyqd7R7wTelN4a8nFbWk2TonxxN2caGwmqtOXrD
+    <div class="content">
+      <button>Bulk Mail</button>
+      <pre>//  Code : 1Hcnw9Y6IlIhi2oyaONyqd7R7wTelN4a8nFbWk2TonxxN2caGwmqtOXrD
                 function onOpen(){EmailTemplate.onOpen();}function CheckCurrentQuota(){EmailTemplate.CheckCurrentQuota();}function Create_Trigger(){EmailTemplate.Create_Trigger();}function Delete_Trigger(){EmailTemplate.Delete_Trigger();}function Sendmail(){EmailTemplate.Sendmail();}</pre>
-        </div>
-    </main>
+    </div>
+  </main>
 
 
-    <script>
-        var main = document.getElementsByTagName('main')[0];
-        var button = main.getElementsByTagName('button');
-        for (let i = 0; i < button.length; i++) {
-            button[i].addEventListener('click', function (event) {
-                var parent = event.currentTarget.parentNode;
-                var prev = parent.getElementsByTagName('pre')[0].innerHTML;
-                console.log(prev);
-                var textarea = document.createElement('textarea');
-                textarea.value = prev;
-                document.body.appendChild(textarea);
-                textarea.select();
-                document.execCommand('copy');
-                textarea.remove();
-                var btnvalue = button[i].innerHTML
-                button[i].innerHTML = 'Bhai Copy Ho Gaya'
-                button[i].style.background = 'orange'
-                alert('Bhai Copy Ho Gaya')
-                setTimeout(function () {
-                    button[i].innerHTML = btnvalue
-                    button[i].style.background = 'green'
-                }, 5000)
-            })
+  <script>
+    var main = document.getElementsByTagName('main')[0];
+    var button = main.getElementsByTagName('button');
+    for (let i = 0; i < button.length; i++) {
+      button[i].addEventListener('click', function (event) {
+        var parent = event.currentTarget.parentNode;
+        var prev = parent.getElementsByTagName('pre')[0].innerHTML;
+        console.log(prev);
+        var textarea = document.createElement('textarea');
+        textarea.value = prev;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        textarea.remove();
+        var btnvalue = button[i].innerHTML
+        button[i].innerHTML = 'Bhai Copy Ho Gaya'
+        button[i].style.background = 'orange'
+        alert('Bhai Copy Ho Gaya')
+        setTimeout(function () {
+          button[i].innerHTML = btnvalue
+          button[i].style.background = 'green'
+        }, 5000)
+      })
+    }
+  </script>
+  <script>
+    var search = document.getElementById('SearchScript')
+    search.addEventListener('input', function () {
+      var main = document.getElementsByTagName('main')[0]
+      var button = main.getElementsByTagName('button');
+      var searchCon = search.value.toString().toLowerCase();
+      for (let i = 0; i < button.length; i++) {
+        var header = button[i].innerHTML.toString().toLowerCase();
+        if (header.includes(searchCon)) {
+          button[i].parentNode.style.display = 'block'
+        } else {
+          button[i].parentNode.style.display = 'none'
         }
-    </script>
-    <script>
-        var search = document.getElementById('SearchScript')
-        search.addEventListener('input', function () {
-            var main = document.getElementsByTagName('main')[0]
-            var button = main.getElementsByTagName('button');
-            var searchCon = search.value.toString().toLowerCase();
-            for (let i = 0; i < button.length; i++) {
-                var header = button[i].innerHTML.toString().toLowerCase();
-                if (header.includes(searchCon)) {
-                    button[i].parentNode.style.display = 'block'
-                } else {
-                    button[i].parentNode.style.display = 'none'
-                }
-            }
-        })
-    </script>
+      }
+    })
+  </script>
 
 
 </body>
