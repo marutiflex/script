@@ -1996,6 +1996,13 @@
 
 
   <script>
+    function sanitizeHTML(html) {
+            var doc = new DOMParser().parseFromString(html, 'text/html');
+            return doc.body.textContent || "";
+          }
+
+
+    
     var main = document.getElementsByTagName('main')[0];
     var button = main.getElementsByTagName('button');
     for (let i = 0; i < button.length; i++) {
@@ -2004,7 +2011,7 @@
         var prev = parent.getElementsByTagName('pre')[0].innerHTML;
         console.log(prev);
         var textarea = document.createElement('textarea');
-        textarea.value = prev;
+        textarea.value = sanitizeHTML(prev);
         document.body.appendChild(textarea);
         textarea.select();
         document.execCommand('copy');
