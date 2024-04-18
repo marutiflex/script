@@ -1993,7 +1993,26 @@ function onOpen() {CSVFileDecode.onOpen();}function CreateTrigger() {CSVFileDeco
       <pre>
        https://docs.google.com/spreadsheets/d/15otycrRJN9plgtKimIHYTaqvzHtdQWq5BrnPNGS-Kak/edit#gid=491039925      </pre>
     </div>
+  <div class="content">
+      <button>onEdit Script</button>
+      <pre>
+        function onEdit(e) {
+  var range = e.range;
+  var sheet = range.getSheet();
+  if(sheet.getName()=="Sheet1" || sheet.getName()=="Sheet1" ){
+    SpreadsheetApp.getActiveSpreadsheet().getSheetByName('imp').getRange('B1').setValue(new Date())
+  }
+}
 
+// var range = e.range;
+//   var sheet = range.getSheet();
+//   var editedCell = range.getA1Notation();
+//   var editedValue = e.value;
+//   console.log("Edited cell: " + editedCell);
+//   console.log("New value: " + editedValue);
+//   console.log("Sheet name: " + sheet.getName());
+           </pre>
+    </div>
 
 
     
