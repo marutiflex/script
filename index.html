@@ -1993,6 +1993,17 @@ function onOpen() {CSVFileDecode.onOpen();}function CreateTrigger() {CSVFileDeco
       <pre>
        https://docs.google.com/spreadsheets/d/15otycrRJN9plgtKimIHYTaqvzHtdQWq5BrnPNGS-Kak/edit#gid=491039925      </pre>
     </div>
+    <div class="content">
+      <button>EncodeUrl</button>
+      <pre>
+       function encodeHTML(str) {
+  return str.replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+}      </pre>
+    </div>
   <div class="content">
       <button>onEdit Script</button>
       <pre>
