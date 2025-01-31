@@ -125,80 +125,13 @@
     <input type="text" id="SearchScript" placeholder="Search Here...">
   </Header>
   <main>
+    
     <div class="content">
       <button>Master Script</button>
-      <pre>
-        // Library : 1sPTPlrMYfIQcuOdVZHVc6a86sa-B6shzfNOZvZlPKn-CaB5aEN6x82CY
-function onOpen() {Master_Script_V2.onOpen()}function Create_Trigger_Ms() {Master_Script_V2.Create_Trigger_Ms()}function Delete_Trigger_Ms() {Master_Script_V2.Delete_Trigger_Ms()}function install_Importrange() {Master_Script_V2.install_Importrange()}function Import_Support(fromSheetd, fromRange, toSheetd, toRange) {Master_Script_V2.Import_Support(fromSheetd, fromRange, toSheetd, toRange);}function importRange() {Master_Script_V2.importRange();}function refresh_Importrange() {Master_Script_V2.refresh_Importrange()}function cre_tgr_I_range() {Master_Script_V2.cre_tgr_I_range()}function adv_Irange() {Master_Script_V2.adv_Irange();}function install_adv_Irange() {Master_Script_V2.install_adv_Irange()}function cre_tgr_adv_Irange() {Master_Script_V2.cre_tgr_adv_Irange()}function install_Workflow() {Master_Script_V2.install_Workflow();}function workflow() {Master_Script_V2.workflow();}function wf_attch_code(fileId) {Master_Script_V2.wf_attch_code(fileId) ();}function cre_tgr_workflow() {Master_Script_V2.cre_tgr_workflow()}function cre_tgr_protection() {Master_Script_V2.cre_tgr_protection();}function protection() {Master_Script_V2.protection();}function cre_tgr_mail() {Master_Script_V2.cre_tgr_mail()}function install_Email() {Master_Script_V2.install_Email();}function send_Mail() {Master_Script_V2.send_Mail();}function install_form_Ranger() {Master_Script_V2.install_form_Ranger();}function get_Item_of_Form() {Master_Script_V2.get_Item_of_Form()}function form_Ranger() {Master_Script_V2.form_Ranger();}function cre_tgr_form_Ranger() {Master_Script_V2.cre_tgr_form_Ranger();}function cre_tgr_doc_temp() {Master_Script_V2.cre_tgr_doc_temp()}function install_doc_temp() {Master_Script_V2.install_doc_temp()}function doc_template() {Master_Script_V2.doc_template()}function doc_template_attachment(fileId) {Master_Script_V2.doc_template_attachment(fileId)}function help_script() {Master_Script_V2.help_script()}      
-      </pre>
-    </div>
-    <div class="content">
-      <button>Master Script with FMS</button>
       <pre>// Library : 1sPTPlrMYfIQcuOdVZHVc6a86sa-B6shzfNOZvZlPKn-CaB5aEN6x82CY
 function onOpen() {Master_Script_V2.onOpen()}function Create_Trigger_Ms() {Master_Script_V2.Create_Trigger_Ms()}function Delete_Trigger_Ms() {Master_Script_V2.Delete_Trigger_Ms()}function install_Importrange() {Master_Script_V2.install_Importrange()}function Import_Support(fromSheetd, fromRange, toSheetd, toRange) {Master_Script_V2.Import_Support(fromSheetd, fromRange, toSheetd, toRange);}function importRange() {Master_Script_V2.importRange();}function refresh_Importrange() {Master_Script_V2.refresh_Importrange()}function cre_tgr_I_range() {Master_Script_V2.cre_tgr_I_range()}function adv_Irange() {Master_Script_V2.adv_Irange();}function install_adv_Irange() {Master_Script_V2.install_adv_Irange()}function cre_tgr_adv_Irange() {Master_Script_V2.cre_tgr_adv_Irange()}function install_Workflow() {Master_Script_V2.install_Workflow();}function workflow() {Master_Script_V2.workflow();}function wf_attch_code(fileId) {Master_Script_V2.wf_attch_code(fileId) ();}function cre_tgr_workflow() {Master_Script_V2.cre_tgr_workflow()}function cre_tgr_protection() {Master_Script_V2.cre_tgr_protection();}function protection() {Master_Script_V2.protection();}function cre_tgr_mail() {Master_Script_V2.cre_tgr_mail()}function install_Email() {Master_Script_V2.install_Email();}function send_Mail() {Master_Script_V2.send_Mail();}function install_form_Ranger() {Master_Script_V2.install_form_Ranger();}function get_Item_of_Form() {Master_Script_V2.get_Item_of_Form()}function form_Ranger() {Master_Script_V2.form_Ranger();}function cre_tgr_form_Ranger() {Master_Script_V2.cre_tgr_form_Ranger();}function cre_tgr_doc_temp() {Master_Script_V2.cre_tgr_doc_temp()}function install_doc_temp() {Master_Script_V2.install_doc_temp()}function doc_template() {Master_Script_V2.doc_template()}function doc_template_attachment(fileId) {Master_Script_V2.doc_template_attachment(fileId)}function install_FMS_Archive() {Master_Script_V2.install_FMS_Archive();}
 function dme_working_hours() {Master_Script_V2.dme_working_hours()}function Doer_to_Doer() {Master_Script_V2.Doer_to_Doer()}function cre_tgr_FMS() {Master_Script_V2.cre_tgr_FMS();}
-function help_script() {Master_Script_V2.help_script()}
-function FMS_Archive() {
-  var myMF = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("MF")
-  myMF.getRange('C5').setValue(new Date());
-  var Fromsheet = myMF.getRange("B1").getValue();
-  var FromRangeRow = myMF.getRange("B2").getValue();
-  var FromRangeColumn = myMF.getRange("B3").getValue();
-  var ConditionColumn1 = myMF.getRange("B4").getValue();
-  var ConditionColumn = ConditionColumn1 - 1;
-  var ToSheet = myMF.getRange("B5").getValue();
-  var InitiateSheet = myMF.getRange("B6").getValue();
-  var InitiateSheetconditionColumn1 = myMF.getRange("B7").getValue();
-  var InitiateSheetconditionColumn = InitiateSheetconditionColumn1 - 1;
-  var GetRangefiles = myMF.getRange("C8").getValue();
-  var StartingRangeSpatecol = myMF.getRange("B9").getValue();
-  var LastRowcode = myMF.getRange("B10").getValue();
-  var LastRow = LastRowcode - FromRangeRow + 1;
-  var ssin = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
-  var ssindata = ssin.getRange(FromRangeRow, FromRangeColumn, LastRow, ssin.getLastColumn()).getValues();
-  var ssindatafilter = ssindata.filter(function (r) {
-    return r[ConditionColumn] != "";
-  });
-  var e = ssindatafilter.length;
-  if (e > 0) {
-    var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
-    var ssdata = ss.getRange(FromRangeRow, FromRangeColumn, LastRow, ss.getLastColumn()).getValues();
-    var ssdatafilter = ssdata.filter(function (r) {
-      return r[ConditionColumn] != "";
-    });
-    var ssq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ToSheet);
-    var lr = ssq.getLastRow(); var lr2 = lr + 1;
-    var ssdata = ssq.getRange(lr2, 1, ssdatafilter.length, ssdatafilter[0].length).setValues(ssdatafilter);
-    //Pasted the Value in Acriveed File
-    var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
-    var aadata = aa.getRange(1, 1, aa.getLastRow(), aa.getLastColumn()).getValues();
-    var aadatafilter = aadata.filter(function (r) {
-      return r[InitiateSheetconditionColumn] === "" && r[0] != "";
-    });
-    var aadatafiltermap = aadatafilter.map(function (row) {
-      return [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13]];
-    });
-    Logger.log(aadatafiltermap[0].length)
-    var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
-    var Error_Clear_Application = ssy.getRange(FromRangeRow, StartingRangeSpatecol, LastRow, aadatafiltermap[0].length).clearContent();
-    var ssyinput = ssy.getRange(FromRangeRow, StartingRangeSpatecol, aadatafiltermap.length, aadatafiltermap[0].length).setValues(aadatafiltermap);
-  }// CLOSE IF STATEMENT
-  else {
-    var aa = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(InitiateSheet);
-    var aadata = aa.getRange(1, 1, aa.getLastRow(), aa.getLastColumn()).getValues();
-    var aadatafilter = aadata.filter(function (r) {
-      return r[InitiateSheetconditionColumn] === "" && r[0] != "";
-    });
-    var aadatafiltermap = aadatafilter.map(function (row) {
-      return [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13]];
-    });
-    var ssy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Fromsheet);
-    var Error_Clear_Application = ssy.getRange(FromRangeRow, StartingRangeSpatecol, LastRow, aadatafiltermap[0].length).clearContent();
-    var ssyinput = ssy.getRange(FromRangeRow, StartingRangeSpatecol, aadatafiltermap.length, aadatafiltermap[0].length).setValues(aadatafiltermap);
-    myMF.getRange('C5').setValue(new Date());
-  }
-}
-              </pre>
+function help_script() {Master_Script_V2.help_script()}function FMS_Archive() {Master_Script_V2.FMS_Archive()}</pre>
     </div>
 
     <div class="content">
